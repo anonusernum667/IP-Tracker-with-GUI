@@ -1,0 +1,212 @@
+@font-face {
+  font-family: f1;
+  src: url(fonts/Jost-Light.ttf);
+
+}
+@font-face {
+    font-family: f2;
+    src: url(fonts/Jost-Medium.ttf);
+}
+*{
+  font-family: f1;
+  transition: 300ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  background-color: #eee;
+}
+#inputcont {
+
+
+
+  background-image: url('images/pattern-bg-desktop.png');
+
+
+  background-repeat: no-repeat; 
+
+  
+  background-size: cover; 
+
+  
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#outcont { 
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 4px;
+  z-index: 1;
+}
+#iplocationimg{
+  background-color: grey;
+  width: 100%;
+  z-index: 0;
+} */
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#inputcont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center  ;
+  align-items: center;
+  background-color: #BFCFE7;
+  text-align: center;
+  width: 98.5%;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+#inputcont p{
+  font-size: 29px;
+  margin-left: 30px;
+}
+
+
+#input {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+#in {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+
+#in input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+#in button {
+  background-color: #3D3B40;
+  color: white;
+  border: none;
+  /* padding: 0px 20px; */
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+
+#in button:hover {
+  background-color: #525CEB;
+}
+
+#outcont {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 20px 20px 0px 0px ;
+  padding: 20px;
+
+  background-color: #3D3B40;
+  color: white;
+  border-radius: 4px;
+}
+
+
+#outcont div{
+  transition-duration: 500ms;
+}
+
+#outcont > div:hover{
+  scale: 101% 101%;
+}
+
+
+#outcont div div  p {
+  margin-top: -5px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+@media (max-width:1000px) {
+  #input {
+    width: 80%;}
+  #in { 
+    width: 100%;
+  }
+  #outcont div{
+    margin-top: -5px;
+    padding-right: 0px;
+  }
+  
+}
+@media (max-width:500px) {
+  #outcont div div  p {
+    font-size: 20px;
+  }
+  #inputcont p{
+    font-size: 29px;
+    margin-left: 0px;
+  }
+  
+  ::placeholder{
+    font-size: 10px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+#map {
+  height: 300px;
+  width: 98.5%;
+  margin-top: 10px;
+}
+/* .error {
+  border: 2px solid red;
+  color: red;
+}
+.noerror{
+  border: 2px solid transparent;
+  color: black;
+} */
